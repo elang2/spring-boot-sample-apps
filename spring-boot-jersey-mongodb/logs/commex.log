@@ -1,0 +1,626 @@
+2016-12-10 11:17:09,248 [main] INFO  [c.e.s.a.c.SpringBootInitializer] - Starting SpringBootInitializer on Elankumaran-Srinivasans-MacBook-Pro.local with PID 29290 (/Users/esrinivasan/develop/learning/elang2/repo/spring-boot-sample-apps/spring-boot-jersey-mongodb/target/classes started by esrinivasan in /Users/esrinivasan/develop/learning/elang2/repo/spring-boot-sample-apps/spring-boot-jersey-mongodb)
+2016-12-10 11:17:09,252 [main] INFO  [c.e.s.a.c.SpringBootInitializer] - No active profile set, falling back to default profiles: default
+2016-12-10 11:17:09,331 [main] INFO  [o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7692d9cc: startup date [Sat Dec 10 11:17:09 PST 2016]; root of context hierarchy
+2016-12-10 11:17:09,372 [background-preinit] INFO  [o.h.v.i.u.Version] - HV000001: Hibernate Validator 5.2.2.Final
+2016-12-10 11:17:11,066 [main] INFO  [o.s.b.f.a.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-10 11:17:11,572 [main] INFO  [o.s.b.c.e.j.JettyEmbeddedServletContainerFactory] - Server initialized with port: 7001
+2016-12-10 11:17:11,576 [main] INFO  [o.e.j.s.Server] - jetty-9.2.14.v20151106
+2016-12-10 11:17:11,751 [main] INFO  [application] - Initializing Spring embedded WebApplicationContext
+2016-12-10 11:17:11,752 [main] INFO  [o.s.w.c.ContextLoader] - Root WebApplicationContext: initialization completed in 2421 ms
+2016-12-10 11:17:12,389 [main] INFO  [o.s.b.c.e.ServletRegistrationBean] - Mapping servlet: 'dispatcherServlet' to [/app/*]
+2016-12-10 11:17:12,391 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'metricFilter' to: [/*]
+2016-12-10 11:17:12,391 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-12-10 11:17:12,392 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-12-10 11:17:12,392 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-12-10 11:17:12,392 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'requestContextFilter' to: [/*]
+2016-12-10 11:17:12,393 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2016-12-10 11:17:12,393 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2016-12-10 11:17:12,707 [main] INFO  [o.e.j.s.h.ContextHandler] - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@2d5ef498{/commex,file:/private/var/folders/sf/z_m8pwds4kjc790z26wr8f9r0000gp/T/jetty-docbase.5669141687104211887.7001/,AVAILABLE}
+2016-12-10 11:17:12,707 [main] INFO  [o.e.j.s.Server] - Started @5052ms
+2016-12-10 11:17:12,989 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7692d9cc: startup date [Sat Dec 10 11:17:09 PST 2016]; root of context hierarchy
+2016-12-10 11:17:13,102 [main] INFO  [o.s.w.s.h.SimpleUrlHandlerMapping] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-10 11:17:13,102 [main] INFO  [o.s.w.s.h.SimpleUrlHandlerMapping] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-10 11:17:13,147 [main] INFO  [o.s.w.s.h.SimpleUrlHandlerMapping] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-10 11:17:13,361 [main] INFO  [o.m.d.cluster] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2016-12-10 11:17:13,428 [cluster-ClusterId{value='584c54b91f3c23726a51d20d', description='null'}-localhost:27017] INFO  [o.m.d.cluster] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63) ~[mongodb-driver-core-3.3.0.jar:na]
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:115) ~[mongodb-driver-core-3.3.0.jar:na]
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:116) ~[mongodb-driver-core-3.3.0.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_66]
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_66]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_66]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_66]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_66]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_66]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_66]
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:50) ~[mongodb-driver-core-3.3.0.jar:na]
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58) ~[mongodb-driver-core-3.3.0.jar:na]
+	... 3 common frames omitted
+2016-12-10 11:17:13,982 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/info || /manage/info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:17:13,984 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/dump || /manage/dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:17:13,985 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/mappings || /manage/mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:17:13,986 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2016-12-10 11:17:13,987 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/metrics || /manage/metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:17:13,988 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/beans || /manage/beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:17:13,989 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2016-12-10 11:17:13,989 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/env || /manage/env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:17:13,990 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/health || /manage/health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2016-12-10 11:17:13,993 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/trace || /manage/trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:17:13,994 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/configprops || /manage/configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:17:13,995 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/autoconfig || /manage/autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:17:14,157 [main] INFO  [application] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-12-10 11:17:14,157 [main] INFO  [o.s.w.s.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization started
+2016-12-10 11:17:14,171 [main] INFO  [o.s.w.s.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2016-12-10 11:17:14,213 [main] INFO  [o.e.j.s.ServerConnector] - Started ServerConnector@5934ca1e{HTTP/1.1}{0.0.0.0:7001}
+2016-12-10 11:17:14,310 [main] INFO  [o.s.b.c.e.j.JettyEmbeddedServletContainer] - Jetty started on port(s) 7001 (http/1.1)
+2016-12-10 11:17:14,316 [main] INFO  [c.e.s.a.c.SpringBootInitializer] - Started SpringBootInitializer in 5.709 seconds (JVM running for 6.662)
+2016-12-10 11:17:22,698 [Thread-13] INFO  [o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7692d9cc: startup date [Sat Dec 10 11:17:09 PST 2016]; root of context hierarchy
+2016-12-10 11:17:22,719 [Thread-13] INFO  [o.e.j.s.ServerConnector] - Stopped ServerConnector@5934ca1e{HTTP/1.1}{0.0.0.0:7001}
+2016-12-10 11:17:22,720 [Thread-13] INFO  [application] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2016-12-10 11:17:22,721 [Thread-13] INFO  [o.e.j.s.h.ContextHandler] - Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@2d5ef498{/commex,file:/private/var/folders/sf/z_m8pwds4kjc790z26wr8f9r0000gp/T/jetty-docbase.5669141687104211887.7001/,UNAVAILABLE}
+2016-12-10 11:21:54,200 [main] INFO  [c.e.s.a.c.SpringBootInitializer] - Starting SpringBootInitializer on Elankumaran-Srinivasans-MacBook-Pro.local with PID 29329 (/Users/esrinivasan/develop/learning/elang2/repo/spring-boot-sample-apps/spring-boot-jersey-mongodb/target/classes started by esrinivasan in /Users/esrinivasan/develop/learning/elang2/repo/spring-boot-sample-apps/spring-boot-jersey-mongodb)
+2016-12-10 11:21:54,204 [main] INFO  [c.e.s.a.c.SpringBootInitializer] - No active profile set, falling back to default profiles: default
+2016-12-10 11:21:54,279 [main] INFO  [o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3576ddc2: startup date [Sat Dec 10 11:21:54 PST 2016]; root of context hierarchy
+2016-12-10 11:21:56,340 [main] INFO  [o.s.b.f.a.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-10 11:21:56,971 [main] INFO  [o.s.b.c.e.j.JettyEmbeddedServletContainerFactory] - Server initialized with port: 7001
+2016-12-10 11:21:56,978 [main] INFO  [o.e.j.s.Server] - jetty-9.2.14.v20151106
+2016-12-10 11:21:57,151 [main] INFO  [application] - Initializing Spring embedded WebApplicationContext
+2016-12-10 11:21:57,151 [main] INFO  [o.s.w.c.ContextLoader] - Root WebApplicationContext: initialization completed in 2872 ms
+2016-12-10 11:21:58,360 [main] INFO  [o.s.b.c.e.ServletRegistrationBean] - Mapping servlet: 'dispatcherServlet' to [/app/*]
+2016-12-10 11:21:58,364 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'metricFilter' to: [/*]
+2016-12-10 11:21:58,364 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-12-10 11:21:58,364 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-12-10 11:21:58,364 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-12-10 11:21:58,364 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'requestContextFilter' to: [/*]
+2016-12-10 11:21:58,364 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2016-12-10 11:21:58,365 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2016-12-10 11:21:58,680 [main] INFO  [o.e.j.s.h.ContextHandler] - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@35025a0a{/,file:/private/var/folders/sf/z_m8pwds4kjc790z26wr8f9r0000gp/T/jetty-docbase.8900904320474427003.7001/,AVAILABLE}
+2016-12-10 11:21:58,681 [main] INFO  [o.e.j.s.Server] - Started @6846ms
+2016-12-10 11:21:58,827 [main] INFO  [c.e.s.a.c.MongoConfiguration] - Creating mongo client
+2016-12-10 11:21:58,955 [main] INFO  [o.m.d.cluster] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2016-12-10 11:21:59,065 [cluster-ClusterId{value='584c55d61f3c237291d9bcd3', description='null'}-localhost:27017] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:2, serverValue:1}] to localhost:27017
+2016-12-10 11:21:59,065 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:1, serverValue:2}] to localhost:27017
+2016-12-10 11:21:59,068 [cluster-ClusterId{value='584c55d61f3c237291d9bcd3', description='null'}-localhost:27017] INFO  [o.m.d.cluster] - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 7]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=966569}
+2016-12-10 11:21:59,072 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:3, serverValue:3}] to localhost:27017
+2016-12-10 11:21:59,080 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:4, serverValue:4}] to localhost:27017
+2016-12-10 11:21:59,088 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:5, serverValue:5}] to localhost:27017
+2016-12-10 11:21:59,096 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:6, serverValue:6}] to localhost:27017
+2016-12-10 11:21:59,100 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:7, serverValue:7}] to localhost:27017
+2016-12-10 11:21:59,103 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:8, serverValue:8}] to localhost:27017
+2016-12-10 11:21:59,106 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:9, serverValue:9}] to localhost:27017
+2016-12-10 11:21:59,111 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:10, serverValue:10}] to localhost:27017
+2016-12-10 11:21:59,113 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:11, serverValue:11}] to localhost:27017
+2016-12-10 11:21:59,116 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:12, serverValue:12}] to localhost:27017
+2016-12-10 11:21:59,118 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:13, serverValue:13}] to localhost:27017
+2016-12-10 11:21:59,123 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:14, serverValue:14}] to localhost:27017
+2016-12-10 11:21:59,129 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:15, serverValue:15}] to localhost:27017
+2016-12-10 11:21:59,132 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:16, serverValue:16}] to localhost:27017
+2016-12-10 11:21:59,134 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:17, serverValue:17}] to localhost:27017
+2016-12-10 11:21:59,137 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:18, serverValue:18}] to localhost:27017
+2016-12-10 11:21:59,140 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:19, serverValue:19}] to localhost:27017
+2016-12-10 11:21:59,142 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:20, serverValue:20}] to localhost:27017
+2016-12-10 11:21:59,145 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:21, serverValue:21}] to localhost:27017
+2016-12-10 11:21:59,147 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:22, serverValue:22}] to localhost:27017
+2016-12-10 11:21:59,150 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:23, serverValue:23}] to localhost:27017
+2016-12-10 11:21:59,153 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:24, serverValue:24}] to localhost:27017
+2016-12-10 11:21:59,157 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:25, serverValue:25}] to localhost:27017
+2016-12-10 11:21:59,161 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:26, serverValue:26}] to localhost:27017
+2016-12-10 11:21:59,163 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:27, serverValue:27}] to localhost:27017
+2016-12-10 11:21:59,166 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:28, serverValue:28}] to localhost:27017
+2016-12-10 11:21:59,170 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:29, serverValue:29}] to localhost:27017
+2016-12-10 11:21:59,174 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:30, serverValue:30}] to localhost:27017
+2016-12-10 11:21:59,176 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:31, serverValue:31}] to localhost:27017
+2016-12-10 11:21:59,178 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:32, serverValue:32}] to localhost:27017
+2016-12-10 11:21:59,180 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:33, serverValue:33}] to localhost:27017
+2016-12-10 11:21:59,182 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:34, serverValue:34}] to localhost:27017
+2016-12-10 11:21:59,184 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:35, serverValue:35}] to localhost:27017
+2016-12-10 11:21:59,186 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:36, serverValue:36}] to localhost:27017
+2016-12-10 11:21:59,188 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:37, serverValue:37}] to localhost:27017
+2016-12-10 11:21:59,190 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:38, serverValue:38}] to localhost:27017
+2016-12-10 11:21:59,193 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:39, serverValue:39}] to localhost:27017
+2016-12-10 11:21:59,195 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:40, serverValue:40}] to localhost:27017
+2016-12-10 11:21:59,197 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:41, serverValue:41}] to localhost:27017
+2016-12-10 11:21:59,200 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:42, serverValue:42}] to localhost:27017
+2016-12-10 11:21:59,202 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:43, serverValue:43}] to localhost:27017
+2016-12-10 11:21:59,208 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:44, serverValue:44}] to localhost:27017
+2016-12-10 11:21:59,210 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:45, serverValue:45}] to localhost:27017
+2016-12-10 11:21:59,212 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:46, serverValue:46}] to localhost:27017
+2016-12-10 11:21:59,215 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:47, serverValue:47}] to localhost:27017
+2016-12-10 11:21:59,217 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:48, serverValue:48}] to localhost:27017
+2016-12-10 11:21:59,219 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:49, serverValue:49}] to localhost:27017
+2016-12-10 11:21:59,223 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:50, serverValue:50}] to localhost:27017
+2016-12-10 11:21:59,226 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:51, serverValue:51}] to localhost:27017
+2016-12-10 11:21:59,452 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3576ddc2: startup date [Sat Dec 10 11:21:54 PST 2016]; root of context hierarchy
+2016-12-10 11:21:59,602 [main] INFO  [o.s.w.s.h.SimpleUrlHandlerMapping] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-10 11:21:59,603 [main] INFO  [o.s.w.s.h.SimpleUrlHandlerMapping] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-10 11:21:59,671 [main] INFO  [o.s.w.s.h.SimpleUrlHandlerMapping] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-10 11:22:01,319 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/dump || /manage/dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:22:01,322 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/health || /manage/health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2016-12-10 11:22:01,323 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/trace || /manage/trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:22:01,325 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2016-12-10 11:22:01,325 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/env || /manage/env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:22:01,326 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/beans || /manage/beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:22:01,327 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/autoconfig || /manage/autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:22:01,327 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/mappings || /manage/mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:22:01,330 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/configprops || /manage/configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:22:01,331 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2016-12-10 11:22:01,332 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/metrics || /manage/metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:22:01,332 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/info || /manage/info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:22:01,782 [main] INFO  [o.s.j.e.a.AnnotationMBeanExporter] - Registering beans for JMX exposure on startup
+2016-12-10 11:22:01,789 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Registering beans for JMX exposure on startup
+2016-12-10 11:22:01,803 [main] INFO  [o.s.c.s.DefaultLifecycleProcessor] - Starting beans in phase 0
+2016-12-10 11:22:01,807 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2016-12-10 11:22:01,847 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2016-12-10 11:22:01,859 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2016-12-10 11:22:01,865 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2016-12-10 11:22:01,870 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2016-12-10 11:22:01,880 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2016-12-10 11:22:01,885 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2016-12-10 11:22:01,891 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2016-12-10 11:22:01,900 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2016-12-10 11:22:01,906 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2016-12-10 11:22:01,940 [main] INFO  [application] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-12-10 11:22:01,940 [main] INFO  [o.s.w.s.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization started
+2016-12-10 11:22:01,960 [main] INFO  [o.s.w.s.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2016-12-10 11:22:01,994 [main] INFO  [o.e.j.s.ServerConnector] - Started ServerConnector@5de47981{HTTP/1.1}{0.0.0.0:7001}
+2016-12-10 11:22:01,998 [main] INFO  [o.s.b.c.e.j.JettyEmbeddedServletContainer] - Jetty started on port(s) 7001 (http/1.1)
+2016-12-10 11:22:02,005 [main] INFO  [c.e.s.a.c.SpringBootInitializer] - Started SpringBootInitializer in 8.838 seconds (JVM running for 10.17)
+2016-12-10 11:23:01,596 [main] INFO  [c.e.s.a.c.SpringBootInitializer] - Starting SpringBootInitializer on Elankumaran-Srinivasans-MacBook-Pro.local with PID 29330 (/Users/esrinivasan/develop/learning/elang2/repo/spring-boot-sample-apps/spring-boot-jersey-mongodb/target/classes started by esrinivasan in /Users/esrinivasan/develop/learning/elang2/repo/spring-boot-sample-apps/spring-boot-jersey-mongodb)
+2016-12-10 11:23:01,600 [main] INFO  [c.e.s.a.c.SpringBootInitializer] - No active profile set, falling back to default profiles: default
+2016-12-10 11:23:01,661 [main] INFO  [o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@327af41b: startup date [Sat Dec 10 11:23:01 PST 2016]; root of context hierarchy
+2016-12-10 11:23:03,478 [main] INFO  [o.s.b.f.a.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-10 11:23:04,021 [main] INFO  [o.s.b.c.e.j.JettyEmbeddedServletContainerFactory] - Server initialized with port: 7001
+2016-12-10 11:23:04,026 [main] INFO  [o.e.j.s.Server] - jetty-9.2.14.v20151106
+2016-12-10 11:23:04,193 [main] INFO  [application] - Initializing Spring embedded WebApplicationContext
+2016-12-10 11:23:04,194 [main] INFO  [o.s.w.c.ContextLoader] - Root WebApplicationContext: initialization completed in 2533 ms
+2016-12-10 11:23:05,485 [main] INFO  [o.s.b.c.e.ServletRegistrationBean] - Mapping servlet: 'dispatcherServlet' to [/app/*]
+2016-12-10 11:23:05,489 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'metricFilter' to: [/*]
+2016-12-10 11:23:05,489 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-12-10 11:23:05,489 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-12-10 11:23:05,489 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-12-10 11:23:05,489 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'requestContextFilter' to: [/*]
+2016-12-10 11:23:05,490 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2016-12-10 11:23:05,490 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2016-12-10 11:23:05,827 [main] INFO  [o.e.j.s.h.ContextHandler] - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@216c22ce{/,file:/private/var/folders/sf/z_m8pwds4kjc790z26wr8f9r0000gp/T/jetty-docbase.874956991952277363.7001/,AVAILABLE}
+2016-12-10 11:23:05,827 [main] INFO  [o.e.j.s.Server] - Started @5907ms
+2016-12-10 11:23:05,946 [main] INFO  [c.e.s.a.c.MongoConfiguration] - Creating mongo client
+2016-12-10 11:23:06,060 [main] INFO  [o.m.d.cluster] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2016-12-10 11:23:06,069 [pool-1-thread-1] DEBUG [o.m.d.connection] - Pruning pooled connections to localhost:27017
+2016-12-10 11:23:06,069 [pool-1-thread-1] DEBUG [o.m.d.connection] - Pruning pooled connections to localhost:27017
+2016-12-10 11:23:06,070 [pool-1-thread-1] DEBUG [o.m.d.connection] - Ensuring minimum pooled connections to localhost:27017
+2016-12-10 11:23:06,070 [pool-1-thread-1] DEBUG [o.m.d.connection] - Ensuring minimum pooled connections to localhost:27017
+2016-12-10 11:23:06,147 [cluster-ClusterId{value='584c561a1f3c237292ed0609', description='null'}-localhost:27017] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:2, serverValue:52}] to localhost:27017
+2016-12-10 11:23:06,147 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:1, serverValue:53}] to localhost:27017
+2016-12-10 11:23:06,147 [cluster-ClusterId{value='584c561a1f3c237292ed0609', description='null'}-localhost:27017] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:2, serverValue:52}] to localhost:27017
+2016-12-10 11:23:06,147 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:1, serverValue:53}] to localhost:27017
+2016-12-10 11:23:06,152 [cluster-ClusterId{value='584c561a1f3c237292ed0609', description='null'}-localhost:27017] INFO  [o.m.d.cluster] - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 7]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=950944}
+2016-12-10 11:23:06,154 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:3, serverValue:54}] to localhost:27017
+2016-12-10 11:23:06,154 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:3, serverValue:54}] to localhost:27017
+2016-12-10 11:23:06,157 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:4, serverValue:55}] to localhost:27017
+2016-12-10 11:23:06,157 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:4, serverValue:55}] to localhost:27017
+2016-12-10 11:23:06,160 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:5, serverValue:56}] to localhost:27017
+2016-12-10 11:23:06,160 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:5, serverValue:56}] to localhost:27017
+2016-12-10 11:23:06,166 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:6, serverValue:57}] to localhost:27017
+2016-12-10 11:23:06,166 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:6, serverValue:57}] to localhost:27017
+2016-12-10 11:23:06,170 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:7, serverValue:58}] to localhost:27017
+2016-12-10 11:23:06,170 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:7, serverValue:58}] to localhost:27017
+2016-12-10 11:23:06,173 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:8, serverValue:59}] to localhost:27017
+2016-12-10 11:23:06,173 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:8, serverValue:59}] to localhost:27017
+2016-12-10 11:23:06,176 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:9, serverValue:60}] to localhost:27017
+2016-12-10 11:23:06,176 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:9, serverValue:60}] to localhost:27017
+2016-12-10 11:23:06,179 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:10, serverValue:61}] to localhost:27017
+2016-12-10 11:23:06,179 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:10, serverValue:61}] to localhost:27017
+2016-12-10 11:23:06,184 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:11, serverValue:62}] to localhost:27017
+2016-12-10 11:23:06,184 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:11, serverValue:62}] to localhost:27017
+2016-12-10 11:23:06,187 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:12, serverValue:63}] to localhost:27017
+2016-12-10 11:23:06,187 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:12, serverValue:63}] to localhost:27017
+2016-12-10 11:23:06,193 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:13, serverValue:64}] to localhost:27017
+2016-12-10 11:23:06,193 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:13, serverValue:64}] to localhost:27017
+2016-12-10 11:23:06,196 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:14, serverValue:65}] to localhost:27017
+2016-12-10 11:23:06,196 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:14, serverValue:65}] to localhost:27017
+2016-12-10 11:23:06,200 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:15, serverValue:66}] to localhost:27017
+2016-12-10 11:23:06,200 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:15, serverValue:66}] to localhost:27017
+2016-12-10 11:23:06,204 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:16, serverValue:67}] to localhost:27017
+2016-12-10 11:23:06,204 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:16, serverValue:67}] to localhost:27017
+2016-12-10 11:23:06,208 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:17, serverValue:68}] to localhost:27017
+2016-12-10 11:23:06,208 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:17, serverValue:68}] to localhost:27017
+2016-12-10 11:23:06,211 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:18, serverValue:69}] to localhost:27017
+2016-12-10 11:23:06,211 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:18, serverValue:69}] to localhost:27017
+2016-12-10 11:23:06,217 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:19, serverValue:70}] to localhost:27017
+2016-12-10 11:23:06,217 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:19, serverValue:70}] to localhost:27017
+2016-12-10 11:23:06,221 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:20, serverValue:71}] to localhost:27017
+2016-12-10 11:23:06,221 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:20, serverValue:71}] to localhost:27017
+2016-12-10 11:23:06,223 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:21, serverValue:72}] to localhost:27017
+2016-12-10 11:23:06,223 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:21, serverValue:72}] to localhost:27017
+2016-12-10 11:23:06,225 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:22, serverValue:73}] to localhost:27017
+2016-12-10 11:23:06,225 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:22, serverValue:73}] to localhost:27017
+2016-12-10 11:23:06,227 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:23, serverValue:74}] to localhost:27017
+2016-12-10 11:23:06,227 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:23, serverValue:74}] to localhost:27017
+2016-12-10 11:23:06,229 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:24, serverValue:75}] to localhost:27017
+2016-12-10 11:23:06,229 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:24, serverValue:75}] to localhost:27017
+2016-12-10 11:23:06,231 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:25, serverValue:76}] to localhost:27017
+2016-12-10 11:23:06,231 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:25, serverValue:76}] to localhost:27017
+2016-12-10 11:23:06,234 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:26, serverValue:77}] to localhost:27017
+2016-12-10 11:23:06,234 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:26, serverValue:77}] to localhost:27017
+2016-12-10 11:23:06,236 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:27, serverValue:78}] to localhost:27017
+2016-12-10 11:23:06,236 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:27, serverValue:78}] to localhost:27017
+2016-12-10 11:23:06,239 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:28, serverValue:79}] to localhost:27017
+2016-12-10 11:23:06,239 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:28, serverValue:79}] to localhost:27017
+2016-12-10 11:23:06,241 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:29, serverValue:80}] to localhost:27017
+2016-12-10 11:23:06,241 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:29, serverValue:80}] to localhost:27017
+2016-12-10 11:23:06,243 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:30, serverValue:81}] to localhost:27017
+2016-12-10 11:23:06,243 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:30, serverValue:81}] to localhost:27017
+2016-12-10 11:23:06,247 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:31, serverValue:82}] to localhost:27017
+2016-12-10 11:23:06,247 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:31, serverValue:82}] to localhost:27017
+2016-12-10 11:23:06,249 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:32, serverValue:83}] to localhost:27017
+2016-12-10 11:23:06,249 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:32, serverValue:83}] to localhost:27017
+2016-12-10 11:23:06,253 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:33, serverValue:84}] to localhost:27017
+2016-12-10 11:23:06,253 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:33, serverValue:84}] to localhost:27017
+2016-12-10 11:23:06,256 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:34, serverValue:85}] to localhost:27017
+2016-12-10 11:23:06,256 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:34, serverValue:85}] to localhost:27017
+2016-12-10 11:23:06,258 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:35, serverValue:86}] to localhost:27017
+2016-12-10 11:23:06,258 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:35, serverValue:86}] to localhost:27017
+2016-12-10 11:23:06,260 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:36, serverValue:87}] to localhost:27017
+2016-12-10 11:23:06,260 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:36, serverValue:87}] to localhost:27017
+2016-12-10 11:23:06,263 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:37, serverValue:88}] to localhost:27017
+2016-12-10 11:23:06,263 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:37, serverValue:88}] to localhost:27017
+2016-12-10 11:23:06,265 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:38, serverValue:89}] to localhost:27017
+2016-12-10 11:23:06,265 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:38, serverValue:89}] to localhost:27017
+2016-12-10 11:23:06,272 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:39, serverValue:90}] to localhost:27017
+2016-12-10 11:23:06,272 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:39, serverValue:90}] to localhost:27017
+2016-12-10 11:23:06,275 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:40, serverValue:91}] to localhost:27017
+2016-12-10 11:23:06,275 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:40, serverValue:91}] to localhost:27017
+2016-12-10 11:23:06,277 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:41, serverValue:92}] to localhost:27017
+2016-12-10 11:23:06,277 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:41, serverValue:92}] to localhost:27017
+2016-12-10 11:23:06,279 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:42, serverValue:93}] to localhost:27017
+2016-12-10 11:23:06,279 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:42, serverValue:93}] to localhost:27017
+2016-12-10 11:23:06,283 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:43, serverValue:94}] to localhost:27017
+2016-12-10 11:23:06,283 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:43, serverValue:94}] to localhost:27017
+2016-12-10 11:23:06,286 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:44, serverValue:95}] to localhost:27017
+2016-12-10 11:23:06,286 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:44, serverValue:95}] to localhost:27017
+2016-12-10 11:23:06,289 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:45, serverValue:96}] to localhost:27017
+2016-12-10 11:23:06,289 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:45, serverValue:96}] to localhost:27017
+2016-12-10 11:23:06,291 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:46, serverValue:97}] to localhost:27017
+2016-12-10 11:23:06,291 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:46, serverValue:97}] to localhost:27017
+2016-12-10 11:23:06,294 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:47, serverValue:98}] to localhost:27017
+2016-12-10 11:23:06,294 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:47, serverValue:98}] to localhost:27017
+2016-12-10 11:23:06,296 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:48, serverValue:99}] to localhost:27017
+2016-12-10 11:23:06,296 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:48, serverValue:99}] to localhost:27017
+2016-12-10 11:23:06,298 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:49, serverValue:100}] to localhost:27017
+2016-12-10 11:23:06,298 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:49, serverValue:100}] to localhost:27017
+2016-12-10 11:23:06,301 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:50, serverValue:101}] to localhost:27017
+2016-12-10 11:23:06,301 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:50, serverValue:101}] to localhost:27017
+2016-12-10 11:23:06,303 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:51, serverValue:102}] to localhost:27017
+2016-12-10 11:23:06,303 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:51, serverValue:102}] to localhost:27017
+2016-12-10 11:23:06,569 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@327af41b: startup date [Sat Dec 10 11:23:01 PST 2016]; root of context hierarchy
+2016-12-10 11:23:06,691 [main] INFO  [o.s.w.s.h.SimpleUrlHandlerMapping] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-10 11:23:06,691 [main] INFO  [o.s.w.s.h.SimpleUrlHandlerMapping] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-10 11:23:06,759 [main] INFO  [o.s.w.s.h.SimpleUrlHandlerMapping] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-10 11:23:08,231 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/health || /manage/health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2016-12-10 11:23:08,233 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/configprops || /manage/configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:23:08,234 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2016-12-10 11:23:08,234 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/metrics || /manage/metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:23:08,235 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/info || /manage/info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:23:08,236 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/beans || /manage/beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:23:08,236 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/trace || /manage/trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:23:08,237 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/dump || /manage/dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:23:08,241 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2016-12-10 11:23:08,241 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/env || /manage/env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:23:08,242 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/autoconfig || /manage/autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:23:08,243 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/mappings || /manage/mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:23:08,619 [main] INFO  [o.s.j.e.a.AnnotationMBeanExporter] - Registering beans for JMX exposure on startup
+2016-12-10 11:23:08,624 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Registering beans for JMX exposure on startup
+2016-12-10 11:23:08,630 [main] INFO  [o.s.c.s.DefaultLifecycleProcessor] - Starting beans in phase 0
+2016-12-10 11:23:08,633 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2016-12-10 11:23:08,664 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2016-12-10 11:23:08,671 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2016-12-10 11:23:08,676 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2016-12-10 11:23:08,681 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2016-12-10 11:23:08,688 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2016-12-10 11:23:08,692 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2016-12-10 11:23:08,698 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2016-12-10 11:23:08,706 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2016-12-10 11:23:08,710 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2016-12-10 11:23:08,737 [main] INFO  [application] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-12-10 11:23:08,737 [main] INFO  [o.s.w.s.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization started
+2016-12-10 11:23:08,754 [main] INFO  [o.s.w.s.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2016-12-10 11:23:08,793 [main] INFO  [o.e.j.s.ServerConnector] - Started ServerConnector@54e0f76f{HTTP/1.1}{0.0.0.0:7001}
+2016-12-10 11:23:08,796 [main] INFO  [o.s.b.c.e.j.JettyEmbeddedServletContainer] - Jetty started on port(s) 7001 (http/1.1)
+2016-12-10 11:23:08,803 [main] INFO  [c.e.s.a.c.SpringBootInitializer] - Started SpringBootInitializer in 8.133 seconds (JVM running for 8.883)
+2016-12-10 11:23:43,655 [main] INFO  [c.e.s.a.c.SpringBootInitializer] - Starting SpringBootInitializer on Elankumaran-Srinivasans-MacBook-Pro.local with PID 29331 (/Users/esrinivasan/develop/learning/elang2/repo/spring-boot-sample-apps/spring-boot-jersey-mongodb/target/classes started by esrinivasan in /Users/esrinivasan/develop/learning/elang2/repo/spring-boot-sample-apps/spring-boot-jersey-mongodb)
+2016-12-10 11:23:43,660 [main] INFO  [c.e.s.a.c.SpringBootInitializer] - No active profile set, falling back to default profiles: default
+2016-12-10 11:23:43,724 [main] INFO  [o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cb6decd: startup date [Sat Dec 10 11:23:43 PST 2016]; root of context hierarchy
+2016-12-10 11:23:45,525 [main] INFO  [o.s.b.f.a.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-10 11:23:46,141 [main] INFO  [o.s.b.c.e.j.JettyEmbeddedServletContainerFactory] - Server initialized with port: 7001
+2016-12-10 11:23:46,147 [main] INFO  [o.e.j.s.Server] - jetty-9.2.14.v20151106
+2016-12-10 11:23:46,285 [main] INFO  [application] - Initializing Spring embedded WebApplicationContext
+2016-12-10 11:23:46,285 [main] INFO  [o.s.w.c.ContextLoader] - Root WebApplicationContext: initialization completed in 2561 ms
+2016-12-10 11:23:47,661 [main] INFO  [o.s.b.c.e.ServletRegistrationBean] - Mapping servlet: 'dispatcherServlet' to [/app/*]
+2016-12-10 11:23:47,665 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'metricFilter' to: [/*]
+2016-12-10 11:23:47,665 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-12-10 11:23:47,665 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-12-10 11:23:47,666 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-12-10 11:23:47,666 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'requestContextFilter' to: [/*]
+2016-12-10 11:23:47,666 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2016-12-10 11:23:47,666 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2016-12-10 11:23:48,018 [main] INFO  [o.e.j.s.h.ContextHandler] - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@216c22ce{/,file:/private/var/folders/sf/z_m8pwds4kjc790z26wr8f9r0000gp/T/jetty-docbase.4212311384921659681.7001/,AVAILABLE}
+2016-12-10 11:23:48,018 [main] INFO  [o.e.j.s.Server] - Started @6070ms
+2016-12-10 11:23:48,142 [main] INFO  [c.e.s.a.c.MongoConfiguration] - Creating mongo client
+2016-12-10 11:23:48,234 [main] INFO  [o.m.d.cluster] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2016-12-10 11:23:48,243 [pool-1-thread-1] DEBUG [o.m.d.connection] - Pruning pooled connections to localhost:27017
+2016-12-10 11:23:48,243 [pool-1-thread-1] DEBUG [o.m.d.connection] - Ensuring minimum pooled connections to localhost:27017
+2016-12-10 11:23:48,316 [cluster-ClusterId{value='584c56441f3c237293bb5dea', description='null'}-localhost:27017] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:2, serverValue:104}] to localhost:27017
+2016-12-10 11:23:48,316 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:1, serverValue:103}] to localhost:27017
+2016-12-10 11:23:48,319 [cluster-ClusterId{value='584c56441f3c237293bb5dea', description='null'}-localhost:27017] INFO  [o.m.d.cluster] - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 7]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=774500}
+2016-12-10 11:23:48,322 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:3, serverValue:105}] to localhost:27017
+2016-12-10 11:23:48,326 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:4, serverValue:106}] to localhost:27017
+2016-12-10 11:23:48,329 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:5, serverValue:107}] to localhost:27017
+2016-12-10 11:23:48,332 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:6, serverValue:108}] to localhost:27017
+2016-12-10 11:23:48,336 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:7, serverValue:109}] to localhost:27017
+2016-12-10 11:23:48,339 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:8, serverValue:110}] to localhost:27017
+2016-12-10 11:23:48,343 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:9, serverValue:111}] to localhost:27017
+2016-12-10 11:23:48,346 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:10, serverValue:112}] to localhost:27017
+2016-12-10 11:23:48,349 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:11, serverValue:113}] to localhost:27017
+2016-12-10 11:23:48,351 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:12, serverValue:114}] to localhost:27017
+2016-12-10 11:23:48,355 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:13, serverValue:115}] to localhost:27017
+2016-12-10 11:23:48,358 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:14, serverValue:116}] to localhost:27017
+2016-12-10 11:23:48,361 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:15, serverValue:117}] to localhost:27017
+2016-12-10 11:23:48,363 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:16, serverValue:118}] to localhost:27017
+2016-12-10 11:23:48,366 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:17, serverValue:119}] to localhost:27017
+2016-12-10 11:23:48,368 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:18, serverValue:120}] to localhost:27017
+2016-12-10 11:23:48,372 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:19, serverValue:121}] to localhost:27017
+2016-12-10 11:23:48,378 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:20, serverValue:122}] to localhost:27017
+2016-12-10 11:23:48,383 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:21, serverValue:123}] to localhost:27017
+2016-12-10 11:23:48,389 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:22, serverValue:124}] to localhost:27017
+2016-12-10 11:23:48,395 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:23, serverValue:125}] to localhost:27017
+2016-12-10 11:23:48,398 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:24, serverValue:126}] to localhost:27017
+2016-12-10 11:23:48,400 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:25, serverValue:127}] to localhost:27017
+2016-12-10 11:23:48,403 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:26, serverValue:128}] to localhost:27017
+2016-12-10 11:23:48,406 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:27, serverValue:129}] to localhost:27017
+2016-12-10 11:23:48,410 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:28, serverValue:130}] to localhost:27017
+2016-12-10 11:23:48,412 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:29, serverValue:131}] to localhost:27017
+2016-12-10 11:23:48,416 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:30, serverValue:132}] to localhost:27017
+2016-12-10 11:23:48,418 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:31, serverValue:133}] to localhost:27017
+2016-12-10 11:23:48,423 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:32, serverValue:134}] to localhost:27017
+2016-12-10 11:23:48,425 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:33, serverValue:135}] to localhost:27017
+2016-12-10 11:23:48,428 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:34, serverValue:136}] to localhost:27017
+2016-12-10 11:23:48,430 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:35, serverValue:137}] to localhost:27017
+2016-12-10 11:23:48,433 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:36, serverValue:138}] to localhost:27017
+2016-12-10 11:23:48,436 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:37, serverValue:139}] to localhost:27017
+2016-12-10 11:23:48,439 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:38, serverValue:140}] to localhost:27017
+2016-12-10 11:23:48,441 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:39, serverValue:141}] to localhost:27017
+2016-12-10 11:23:48,445 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:40, serverValue:142}] to localhost:27017
+2016-12-10 11:23:48,448 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:41, serverValue:143}] to localhost:27017
+2016-12-10 11:23:48,450 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:42, serverValue:144}] to localhost:27017
+2016-12-10 11:23:48,452 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:43, serverValue:145}] to localhost:27017
+2016-12-10 11:23:48,456 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:44, serverValue:146}] to localhost:27017
+2016-12-10 11:23:48,459 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:45, serverValue:147}] to localhost:27017
+2016-12-10 11:23:48,461 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:46, serverValue:148}] to localhost:27017
+2016-12-10 11:23:48,463 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:47, serverValue:149}] to localhost:27017
+2016-12-10 11:23:48,465 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:48, serverValue:150}] to localhost:27017
+2016-12-10 11:23:48,467 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:49, serverValue:151}] to localhost:27017
+2016-12-10 11:23:48,469 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:50, serverValue:152}] to localhost:27017
+2016-12-10 11:23:48,472 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:51, serverValue:153}] to localhost:27017
+2016-12-10 11:23:48,782 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cb6decd: startup date [Sat Dec 10 11:23:43 PST 2016]; root of context hierarchy
+2016-12-10 11:23:48,924 [main] INFO  [o.s.w.s.h.SimpleUrlHandlerMapping] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-10 11:23:48,924 [main] INFO  [o.s.w.s.h.SimpleUrlHandlerMapping] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-10 11:23:48,979 [main] INFO  [o.s.w.s.h.SimpleUrlHandlerMapping] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-10 11:23:50,640 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/beans || /manage/beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:23:50,641 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/trace || /manage/trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:23:50,642 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/dump || /manage/dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:23:50,643 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2016-12-10 11:23:50,643 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/metrics || /manage/metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:23:50,645 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/configprops || /manage/configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:23:50,646 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/mappings || /manage/mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:23:50,649 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2016-12-10 11:23:50,650 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/env || /manage/env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:23:50,651 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/info || /manage/info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:23:50,652 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/health || /manage/health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2016-12-10 11:23:50,654 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/autoconfig || /manage/autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:23:51,057 [main] INFO  [o.s.j.e.a.AnnotationMBeanExporter] - Registering beans for JMX exposure on startup
+2016-12-10 11:23:51,063 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Registering beans for JMX exposure on startup
+2016-12-10 11:23:51,070 [main] INFO  [o.s.c.s.DefaultLifecycleProcessor] - Starting beans in phase 0
+2016-12-10 11:23:51,073 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2016-12-10 11:23:51,106 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2016-12-10 11:23:51,113 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2016-12-10 11:23:51,119 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2016-12-10 11:23:51,126 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2016-12-10 11:23:51,133 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2016-12-10 11:23:51,141 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2016-12-10 11:23:51,147 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2016-12-10 11:23:51,162 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2016-12-10 11:23:51,167 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2016-12-10 11:23:51,196 [main] INFO  [application] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-12-10 11:23:51,197 [main] INFO  [o.s.w.s.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization started
+2016-12-10 11:23:51,214 [main] INFO  [o.s.w.s.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2016-12-10 11:23:51,252 [main] INFO  [o.e.j.s.ServerConnector] - Started ServerConnector@7f53fc38{HTTP/1.1}{0.0.0.0:7001}
+2016-12-10 11:23:51,256 [main] INFO  [o.s.b.c.e.j.JettyEmbeddedServletContainer] - Jetty started on port(s) 7001 (http/1.1)
+2016-12-10 11:23:51,262 [main] INFO  [c.e.s.a.c.SpringBootInitializer] - Started SpringBootInitializer in 8.563 seconds (JVM running for 9.314)
+2016-12-10 11:24:44,561 [main] INFO  [c.e.s.a.c.SpringBootInitializer] - Starting SpringBootInitializer on Elankumaran-Srinivasans-MacBook-Pro.local with PID 29332 (/Users/esrinivasan/develop/learning/elang2/repo/spring-boot-sample-apps/spring-boot-jersey-mongodb/target/classes started by esrinivasan in /Users/esrinivasan/develop/learning/elang2/repo/spring-boot-sample-apps/spring-boot-jersey-mongodb)
+2016-12-10 11:24:44,565 [main] INFO  [c.e.s.a.c.SpringBootInitializer] - No active profile set, falling back to default profiles: default
+2016-12-10 11:24:44,650 [main] INFO  [o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@327af41b: startup date [Sat Dec 10 11:24:44 PST 2016]; root of context hierarchy
+2016-12-10 11:24:46,893 [main] INFO  [o.s.b.f.a.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-10 11:24:47,575 [main] INFO  [o.s.b.c.e.j.JettyEmbeddedServletContainerFactory] - Server initialized with port: 7001
+2016-12-10 11:24:47,583 [main] INFO  [o.e.j.s.Server] - jetty-9.2.14.v20151106
+2016-12-10 11:24:47,805 [main] INFO  [application] - Initializing Spring embedded WebApplicationContext
+2016-12-10 11:24:47,805 [main] INFO  [o.s.w.c.ContextLoader] - Root WebApplicationContext: initialization completed in 3155 ms
+2016-12-10 11:24:49,621 [main] INFO  [o.s.b.c.e.ServletRegistrationBean] - Mapping servlet: 'dispatcherServlet' to [/app/*]
+2016-12-10 11:24:49,624 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'metricFilter' to: [/*]
+2016-12-10 11:24:49,625 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-12-10 11:24:49,625 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-12-10 11:24:49,625 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-12-10 11:24:49,625 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'requestContextFilter' to: [/*]
+2016-12-10 11:24:49,625 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2016-12-10 11:24:49,626 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2016-12-10 11:24:50,126 [main] INFO  [o.e.j.s.h.ContextHandler] - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@19662208{/,file:/private/var/folders/sf/z_m8pwds4kjc790z26wr8f9r0000gp/T/jetty-docbase.3399487182770556679.7001/,AVAILABLE}
+2016-12-10 11:24:50,126 [main] INFO  [o.e.j.s.Server] - Started @8022ms
+2016-12-10 11:24:50,328 [main] INFO  [c.e.s.a.c.MongoConfiguration] - Creating mongo client
+2016-12-10 11:24:50,460 [main] INFO  [o.m.d.cluster] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2016-12-10 11:24:50,476 [pool-1-thread-1] DEBUG [o.m.d.connection] - Pruning pooled connections to localhost:27017
+2016-12-10 11:24:50,476 [pool-1-thread-1] DEBUG [o.m.d.connection] - Ensuring minimum pooled connections to localhost:27017
+2016-12-10 11:24:50,499 [main] DEBUG [o.m.d.cluster] - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]
+2016-12-10 11:24:50,569 [cluster-ClusterId{value='584c56821f3c237294147326', description='null'}-localhost:27017] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:2, serverValue:154}] to localhost:27017
+2016-12-10 11:24:50,569 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:1, serverValue:155}] to localhost:27017
+2016-12-10 11:24:50,569 [cluster-ClusterId{value='584c56821f3c237294147326', description='null'}-localhost:27017] DEBUG [o.m.d.cluster] - Checking status of localhost:27017
+2016-12-10 11:24:50,572 [cluster-ClusterId{value='584c56821f3c237294147326', description='null'}-localhost:27017] INFO  [o.m.d.cluster] - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 7]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=845084}
+2016-12-10 11:24:50,573 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:3, serverValue:156}] to localhost:27017
+2016-12-10 11:24:50,574 [cluster-ClusterId{value='584c56821f3c237294147326', description='null'}-localhost:27017] DEBUG [o.m.d.cluster] - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=0.8 ms, state=CONNECTED}]
+2016-12-10 11:24:50,576 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:4, serverValue:157}] to localhost:27017
+2016-12-10 11:24:50,581 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:5, serverValue:158}] to localhost:27017
+2016-12-10 11:24:50,584 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:6, serverValue:159}] to localhost:27017
+2016-12-10 11:24:50,588 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:7, serverValue:160}] to localhost:27017
+2016-12-10 11:24:50,591 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:8, serverValue:161}] to localhost:27017
+2016-12-10 11:24:50,595 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:9, serverValue:162}] to localhost:27017
+2016-12-10 11:24:50,598 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:10, serverValue:163}] to localhost:27017
+2016-12-10 11:24:50,602 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:11, serverValue:164}] to localhost:27017
+2016-12-10 11:24:50,605 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:12, serverValue:165}] to localhost:27017
+2016-12-10 11:24:50,608 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:13, serverValue:166}] to localhost:27017
+2016-12-10 11:24:50,611 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:14, serverValue:167}] to localhost:27017
+2016-12-10 11:24:50,616 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:15, serverValue:168}] to localhost:27017
+2016-12-10 11:24:50,619 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:16, serverValue:169}] to localhost:27017
+2016-12-10 11:24:50,622 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:17, serverValue:170}] to localhost:27017
+2016-12-10 11:24:50,624 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:18, serverValue:171}] to localhost:27017
+2016-12-10 11:24:50,627 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:19, serverValue:172}] to localhost:27017
+2016-12-10 11:24:50,635 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:20, serverValue:173}] to localhost:27017
+2016-12-10 11:24:50,638 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:21, serverValue:174}] to localhost:27017
+2016-12-10 11:24:50,647 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:22, serverValue:175}] to localhost:27017
+2016-12-10 11:24:50,652 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:23, serverValue:176}] to localhost:27017
+2016-12-10 11:24:50,655 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:24, serverValue:177}] to localhost:27017
+2016-12-10 11:24:50,659 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:25, serverValue:178}] to localhost:27017
+2016-12-10 11:24:50,662 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:26, serverValue:179}] to localhost:27017
+2016-12-10 11:24:50,664 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:27, serverValue:180}] to localhost:27017
+2016-12-10 11:24:50,669 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:28, serverValue:181}] to localhost:27017
+2016-12-10 11:24:50,672 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:29, serverValue:182}] to localhost:27017
+2016-12-10 11:24:50,674 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:30, serverValue:183}] to localhost:27017
+2016-12-10 11:24:50,676 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:31, serverValue:184}] to localhost:27017
+2016-12-10 11:24:50,678 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:32, serverValue:185}] to localhost:27017
+2016-12-10 11:24:50,681 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:33, serverValue:186}] to localhost:27017
+2016-12-10 11:24:50,684 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:34, serverValue:187}] to localhost:27017
+2016-12-10 11:24:50,687 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:35, serverValue:188}] to localhost:27017
+2016-12-10 11:24:50,690 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:36, serverValue:189}] to localhost:27017
+2016-12-10 11:24:50,692 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:37, serverValue:190}] to localhost:27017
+2016-12-10 11:24:50,694 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:38, serverValue:191}] to localhost:27017
+2016-12-10 11:24:50,697 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:39, serverValue:192}] to localhost:27017
+2016-12-10 11:24:50,699 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:40, serverValue:193}] to localhost:27017
+2016-12-10 11:24:50,703 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:41, serverValue:194}] to localhost:27017
+2016-12-10 11:24:50,711 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:42, serverValue:195}] to localhost:27017
+2016-12-10 11:24:50,727 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:43, serverValue:196}] to localhost:27017
+2016-12-10 11:24:50,736 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:44, serverValue:197}] to localhost:27017
+2016-12-10 11:24:50,742 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:45, serverValue:198}] to localhost:27017
+2016-12-10 11:24:50,750 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:46, serverValue:199}] to localhost:27017
+2016-12-10 11:24:50,753 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:47, serverValue:200}] to localhost:27017
+2016-12-10 11:24:50,756 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:48, serverValue:201}] to localhost:27017
+2016-12-10 11:24:50,758 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:49, serverValue:202}] to localhost:27017
+2016-12-10 11:24:50,761 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:50, serverValue:203}] to localhost:27017
+2016-12-10 11:24:50,763 [pool-1-thread-1] INFO  [o.m.d.connection] - Opened connection [connectionId{localValue:51, serverValue:204}] to localhost:27017
+2016-12-10 11:24:51,094 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@327af41b: startup date [Sat Dec 10 11:24:44 PST 2016]; root of context hierarchy
+2016-12-10 11:24:51,263 [main] INFO  [o.s.w.s.h.SimpleUrlHandlerMapping] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-10 11:24:51,263 [main] INFO  [o.s.w.s.h.SimpleUrlHandlerMapping] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-10 11:24:51,329 [main] INFO  [o.s.w.s.h.SimpleUrlHandlerMapping] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-10 11:24:53,283 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/mappings || /manage/mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:24:53,285 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/autoconfig || /manage/autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:24:53,286 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/health || /manage/health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2016-12-10 11:24:53,288 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2016-12-10 11:24:53,288 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/metrics || /manage/metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:24:53,289 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/trace || /manage/trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:24:53,289 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/dump || /manage/dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:24:53,290 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/beans || /manage/beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:24:53,294 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/configprops || /manage/configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:24:53,297 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2016-12-10 11:24:53,297 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/env || /manage/env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:24:53,297 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/info || /manage/info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:24:53,775 [main] INFO  [o.s.j.e.a.AnnotationMBeanExporter] - Registering beans for JMX exposure on startup
+2016-12-10 11:24:53,781 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Registering beans for JMX exposure on startup
+2016-12-10 11:24:53,790 [main] INFO  [o.s.c.s.DefaultLifecycleProcessor] - Starting beans in phase 0
+2016-12-10 11:24:53,793 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2016-12-10 11:24:53,827 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2016-12-10 11:24:53,835 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2016-12-10 11:24:53,841 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2016-12-10 11:24:53,849 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2016-12-10 11:24:53,855 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2016-12-10 11:24:53,860 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2016-12-10 11:24:53,867 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2016-12-10 11:24:53,877 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2016-12-10 11:24:53,885 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2016-12-10 11:24:53,919 [main] INFO  [application] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-12-10 11:24:53,920 [main] INFO  [o.s.w.s.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization started
+2016-12-10 11:24:53,944 [main] INFO  [o.s.w.s.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2016-12-10 11:24:53,980 [main] INFO  [o.e.j.s.ServerConnector] - Started ServerConnector@5d9bb69b{HTTP/1.1}{0.0.0.0:7001}
+2016-12-10 11:24:53,985 [main] INFO  [o.s.b.c.e.j.JettyEmbeddedServletContainer] - Jetty started on port(s) 7001 (http/1.1)
+2016-12-10 11:24:53,992 [main] INFO  [c.e.s.a.c.SpringBootInitializer] - Started SpringBootInitializer in 10.565 seconds (JVM running for 11.888)
+2016-12-10 11:25:00,575 [cluster-ClusterId{value='584c56821f3c237294147326', description='null'}-localhost:27017] DEBUG [o.m.d.cluster] - Checking status of localhost:27017
+2016-12-10 11:25:00,577 [cluster-ClusterId{value='584c56821f3c237294147326', description='null'}-localhost:27017] DEBUG [o.m.d.cluster] - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=0.9 ms, state=CONNECTED}]
+2016-12-10 11:25:10,581 [cluster-ClusterId{value='584c56821f3c237294147326', description='null'}-localhost:27017] DEBUG [o.m.d.cluster] - Checking status of localhost:27017
+2016-12-10 11:25:10,583 [cluster-ClusterId{value='584c56821f3c237294147326', description='null'}-localhost:27017] DEBUG [o.m.d.cluster] - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.0 ms, state=CONNECTED}]
+2016-12-10 11:25:20,586 [cluster-ClusterId{value='584c56821f3c237294147326', description='null'}-localhost:27017] DEBUG [o.m.d.cluster] - Checking status of localhost:27017
+2016-12-10 11:25:20,587 [cluster-ClusterId{value='584c56821f3c237294147326', description='null'}-localhost:27017] DEBUG [o.m.d.cluster] - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=0.9 ms, state=CONNECTED}]
+2016-12-10 11:25:30,592 [cluster-ClusterId{value='584c56821f3c237294147326', description='null'}-localhost:27017] DEBUG [o.m.d.cluster] - Checking status of localhost:27017
+2016-12-10 11:25:30,593 [cluster-ClusterId{value='584c56821f3c237294147326', description='null'}-localhost:27017] DEBUG [o.m.d.cluster] - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=0.8 ms, state=CONNECTED}]
+2016-12-10 11:25:40,597 [cluster-ClusterId{value='584c56821f3c237294147326', description='null'}-localhost:27017] DEBUG [o.m.d.cluster] - Checking status of localhost:27017
+2016-12-10 11:25:40,598 [cluster-ClusterId{value='584c56821f3c237294147326', description='null'}-localhost:27017] DEBUG [o.m.d.cluster] - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=0.7 ms, state=CONNECTED}]
+2016-12-10 11:25:50,479 [pool-1-thread-1] DEBUG [o.m.d.connection] - Pruning pooled connections to localhost:27017
+2016-12-10 11:25:50,479 [pool-1-thread-1] DEBUG [o.m.d.connection] - Ensuring minimum pooled connections to localhost:27017
+2016-12-10 11:25:50,603 [cluster-ClusterId{value='584c56821f3c237294147326', description='null'}-localhost:27017] DEBUG [o.m.d.cluster] - Checking status of localhost:27017
+2016-12-10 11:25:50,605 [cluster-ClusterId{value='584c56821f3c237294147326', description='null'}-localhost:27017] DEBUG [o.m.d.cluster] - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=0.7 ms, state=CONNECTED}]
+2016-12-10 11:26:00,606 [cluster-ClusterId{value='584c56821f3c237294147326', description='null'}-localhost:27017] DEBUG [o.m.d.cluster] - Checking status of localhost:27017
+2016-12-10 11:26:00,607 [cluster-ClusterId{value='584c56821f3c237294147326', description='null'}-localhost:27017] DEBUG [o.m.d.cluster] - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=0.6 ms, state=CONNECTED}]
+2016-12-10 11:26:10,608 [cluster-ClusterId{value='584c56821f3c237294147326', description='null'}-localhost:27017] DEBUG [o.m.d.cluster] - Checking status of localhost:27017
+2016-12-10 11:26:10,609 [cluster-ClusterId{value='584c56821f3c237294147326', description='null'}-localhost:27017] DEBUG [o.m.d.cluster] - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=0.6 ms, state=CONNECTED}]
+2016-12-10 11:26:20,613 [cluster-ClusterId{value='584c56821f3c237294147326', description='null'}-localhost:27017] DEBUG [o.m.d.cluster] - Checking status of localhost:27017
+2016-12-10 11:26:20,614 [cluster-ClusterId{value='584c56821f3c237294147326', description='null'}-localhost:27017] DEBUG [o.m.d.cluster] - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=0.6 ms, state=CONNECTED}]
+2016-12-10 11:26:24,429 [main] INFO  [c.e.s.a.c.SpringBootInitializer] - Starting SpringBootInitializer on Elankumaran-Srinivasans-MacBook-Pro.local with PID 29333 (/Users/esrinivasan/develop/learning/elang2/repo/spring-boot-sample-apps/spring-boot-jersey-mongodb/target/classes started by esrinivasan in /Users/esrinivasan/develop/learning/elang2/repo/spring-boot-sample-apps/spring-boot-jersey-mongodb)
+2016-12-10 11:26:24,433 [main] INFO  [c.e.s.a.c.SpringBootInitializer] - No active profile set, falling back to default profiles: default
+2016-12-10 11:26:24,503 [main] INFO  [o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@327af41b: startup date [Sat Dec 10 11:26:24 PST 2016]; root of context hierarchy
+2016-12-10 11:26:26,438 [main] INFO  [o.s.b.f.a.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-12-10 11:26:27,048 [main] INFO  [o.s.b.c.e.j.JettyEmbeddedServletContainerFactory] - Server initialized with port: 7001
+2016-12-10 11:26:27,054 [main] INFO  [o.e.j.s.Server] - jetty-9.2.14.v20151106
+2016-12-10 11:26:27,188 [main] INFO  [application] - Initializing Spring embedded WebApplicationContext
+2016-12-10 11:26:27,188 [main] INFO  [o.s.w.c.ContextLoader] - Root WebApplicationContext: initialization completed in 2685 ms
+2016-12-10 11:26:28,413 [main] INFO  [o.s.b.c.e.ServletRegistrationBean] - Mapping servlet: 'dispatcherServlet' to [/app/*]
+2016-12-10 11:26:28,416 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'metricFilter' to: [/*]
+2016-12-10 11:26:28,416 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-12-10 11:26:28,416 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-12-10 11:26:28,416 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-12-10 11:26:28,417 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'requestContextFilter' to: [/*]
+2016-12-10 11:26:28,417 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2016-12-10 11:26:28,417 [main] INFO  [o.s.b.c.e.FilterRegistrationBean] - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2016-12-10 11:26:28,774 [main] INFO  [o.e.j.s.h.ContextHandler] - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@216c22ce{/,file:/private/var/folders/sf/z_m8pwds4kjc790z26wr8f9r0000gp/T/jetty-docbase.5152548713925737470.7001/,AVAILABLE}
+2016-12-10 11:26:28,775 [main] INFO  [o.e.j.s.Server] - Started @6029ms
+2016-12-10 11:26:28,895 [main] INFO  [c.e.s.a.c.MongoConfiguration] - Creating mongo client
+2016-12-10 11:26:29,468 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@327af41b: startup date [Sat Dec 10 11:26:24 PST 2016]; root of context hierarchy
+2016-12-10 11:26:29,616 [main] INFO  [o.s.w.s.h.SimpleUrlHandlerMapping] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-10 11:26:29,616 [main] INFO  [o.s.w.s.h.SimpleUrlHandlerMapping] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-10 11:26:29,674 [main] INFO  [o.s.w.s.h.SimpleUrlHandlerMapping] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-10 11:26:31,235 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2016-12-10 11:26:31,236 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/metrics || /manage/metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:26:31,237 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/beans || /manage/beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:26:31,237 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/info || /manage/info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:26:31,238 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/autoconfig || /manage/autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:26:31,240 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2016-12-10 11:26:31,240 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/env || /manage/env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:26:31,240 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/dump || /manage/dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:26:31,243 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/configprops || /manage/configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:26:31,245 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/health || /manage/health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2016-12-10 11:26:31,246 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/mappings || /manage/mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:26:31,246 [main] INFO  [o.s.b.a.e.m.EndpointHandlerMapping] - Mapped "{[/manage/trace || /manage/trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-12-10 11:26:31,675 [main] INFO  [o.s.j.e.a.AnnotationMBeanExporter] - Registering beans for JMX exposure on startup
+2016-12-10 11:26:31,682 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Registering beans for JMX exposure on startup
+2016-12-10 11:26:31,690 [main] INFO  [o.s.c.s.DefaultLifecycleProcessor] - Starting beans in phase 0
+2016-12-10 11:26:31,693 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2016-12-10 11:26:31,732 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2016-12-10 11:26:31,740 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2016-12-10 11:26:31,748 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2016-12-10 11:26:31,753 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2016-12-10 11:26:31,759 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2016-12-10 11:26:31,765 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2016-12-10 11:26:31,772 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2016-12-10 11:26:31,782 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2016-12-10 11:26:31,788 [main] INFO  [o.s.b.a.e.j.EndpointMBeanExporter] - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2016-12-10 11:26:31,821 [main] INFO  [application] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-12-10 11:26:31,821 [main] INFO  [o.s.w.s.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization started
+2016-12-10 11:26:31,841 [main] INFO  [o.s.w.s.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2016-12-10 11:26:31,878 [main] INFO  [o.e.j.s.ServerConnector] - Started ServerConnector@2d38db6f{HTTP/1.1}{0.0.0.0:7001}
+2016-12-10 11:26:31,882 [main] INFO  [o.s.b.c.e.j.JettyEmbeddedServletContainer] - Jetty started on port(s) 7001 (http/1.1)
+2016-12-10 11:26:31,887 [main] INFO  [c.e.s.a.c.SpringBootInitializer] - Started SpringBootInitializer in 8.406 seconds (JVM running for 9.141)

@@ -23,7 +23,5 @@ public class SpringBootInitializer extends SpringBootServletInitializer {
     public static void main(String[] args) {
         new SpringBootInitializer()
             .configure(new SpringApplicationBuilder(SpringBootInitializer.class)).run(args);
-        
-        
     }
 }

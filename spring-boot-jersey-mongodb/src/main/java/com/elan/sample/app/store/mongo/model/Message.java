@@ -9,25 +9,37 @@ import org.springframework.data.mongodb.core.mapping.Field;
 @Document(collection = "messages")
 public class Message {
 
+	public static final String MESSAGE_READ_DATE = "message_read_date";
+
+	public static final String READ = "read";
+
+	public static final String MESSAGE_SENT_DATE = "message_sent_date";
+
+	public static final String RECEIVER_USER_ID = "receiver_user_id";
+
+	public static final String SENDER_USER_ID = "sender_user_id";
+
+	public static final String TEXT = "text";
+
 	@Id
 	private String id;
 
-	@Field(value = "text")
+	@Field(value = TEXT)
 	private String text;
 
-	@Field(value = "from_email_id")
-	private String fromEmailId;
+	@Field(value = SENDER_USER_ID)
+	private String senderUserId;
 
-	@Field(value = "to_email_id")
-	private String toEmailId;
+	@Field(value = RECEIVER_USER_ID)
+	private String receiverUserId;
 
-	@Field(value = "message_sent_date")
+	@Field(value = MESSAGE_SENT_DATE)
 	private LocalDate messageSentDate;
 
-	@Field(value = "read")
+	@Field(value = READ)
 	private Boolean read;
 
-	@Field(value = "message_read_date")
+	@Field(value = MESSAGE_READ_DATE)
 	private LocalDate messageReadDate;
 
 	public String getId() {
@@ -46,21 +58,6 @@ public class Message {
 		this.text = text;
 	}
 
-	public String getFromEmailId() {
-		return fromEmailId;
-	}
-
-	public void setFromEmailId(String fromEmailId) {
-		this.fromEmailId = fromEmailId;
-	}
-
-	public String getToEmailId() {
-		return toEmailId;
-	}
-
-	public void setToEmailId(String toEmailId) {
-		this.toEmailId = toEmailId;
-	}
 
 	public LocalDate getMessageSentDate() {
 		return messageSentDate;
@@ -84,6 +81,22 @@ public class Message {
 
 	public void setMessageReadDate(LocalDate messageReadDate) {
 		this.messageReadDate = messageReadDate;
+	}
+
+	public String getSenderUserId() {
+		return senderUserId;
+	}
+
+	public void setSenderUserId(String senderUserId) {
+		this.senderUserId = senderUserId;
+	}
+
+	public String getReceiverUserId() {
+		return receiverUserId;
+	}
+
+	public void setReceiverUserId(String receiverUserId) {
+		this.receiverUserId = receiverUserId;
 	}
 
 }

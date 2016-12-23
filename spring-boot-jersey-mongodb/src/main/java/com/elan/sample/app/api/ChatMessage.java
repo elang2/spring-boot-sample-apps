@@ -4,28 +4,12 @@ import java.util.Date;
 
 public class ChatMessage {
 
-	private String senderEmailId;
-	private String receiverEmailId;
+	private String senderUserId;
+	private String receiverUserId;
 	private String message;
 	private Date messageSentDate;
 	private Boolean read;
 	private Date messageReadDate;
-
-	public String getSenderEmailId() {
-		return senderEmailId;
-	}
-
-	public void setSenderEmailId(String senderEmailId) {
-		this.senderEmailId = senderEmailId;
-	}
-
-	public String getReceiverEmailId() {
-		return receiverEmailId;
-	}
-
-	public void setReceiverEmailId(String receiverEmailId) {
-		this.receiverEmailId = receiverEmailId;
-	}
 
 	public String getMessage() {
 		return message;
@@ -57,5 +41,21 @@ public class ChatMessage {
 
 	public void setMessageReadDate(Date messageReadDate) {
 		this.messageReadDate = messageReadDate;
+	}
+
+	public String getSenderUserId() {
+		return senderUserId;
+	}
+
+	public void setSenderUserId(String senderUserId) {
+		this.senderUserId = senderUserId;
+	}
+
+	public String getReceiverUserId() {
+		return receiverUserId;
+	}
+
+	public void setReceiverUserId(String receiverUserId) {
+		this.receiverUserId = receiverUserId;
 	}
 }

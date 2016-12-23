@@ -36,26 +36,33 @@ Concepts Involved :
 
 1. Send Message API
 
- URL: http://localhost:7001/chat-service/chat/v1/messages
- Method Type : HTTP POST
- Headers :
+URL: http://localhost:7001/chat-service/chat/v1/messages
+
+Method Type : HTTP POST
+
+Headers :
       content-type=application/json
+      
  Payload Body:
+ 
+ ```javascript
             {
               "senderUserId": "123",
               "receiverUserId": "234",
               "message": "heelow"
             }  
-
+```
 
 2. Get Messages API
 
 URL : http://localhost:7001/chat-service/chat/v1/users/{userId}/messages?filterBy={filter}
+
 Method : HTTP GET
 
+ ```javascript
 Example:
       http://localhost:7002/chat-service/chat/v1/users/123/messages?filterBy=sent
-
+```
 
   
 

@@ -1,18 +1,17 @@
 package com.elan.sample.app.config;
 
-import org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.mongo.embedded.EmbeddedMongoAutoConfiguration;
 import org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.context.web.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
-import org.springframework.boot.context.web.SpringBootServletInitializer;
 
 @SpringBootApplication
 @ComponentScan(basePackages={"com.elan.sample.app"})
-@EnableAutoConfiguration(exclude = {ErrorMvcAutoConfiguration.class, EmbeddedMongoAutoConfiguration.class, ManagementWebSecurityAutoConfiguration.class})
+@EnableAutoConfiguration(exclude = {ErrorMvcAutoConfiguration.class, EmbeddedMongoAutoConfiguration.class})
 @EnableMongoRepositories(basePackages="com.elan.sample.app.store.mongo.repository")
 public class SpringBootInitializer extends SpringBootServletInitializer {
 	
